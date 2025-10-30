@@ -1,22 +1,21 @@
+import random
 
-today = "Monday"
-# schoolday = today in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-schoolday = (
-    (today == "Monday") or
-    (today == "Tuesday") or
-    (today == "Wednesday") or
-    (today == "Thursday") or
-    (today == "Friday")
-)
+Max_Number = 26
 
-if schoolday:
-    if today == "Friday":
-        print("We have Kab Shab today.")
-    elif today == "Monday":
-        print("We have Assembly today.")
-    elif today == "Wednesday":
-        print("We have Heart Work today.")
+players = random.randint(2, 10)
+
+print("there are", players, "people playing fizzbuzz today")
+print()
+
+# for h in range(players):
+#     player_talk =+ h+1 
+#     print()
+for i in range (1, Max_Number+1):
+    if i % 3 == 0:
+        print("P", h+1 , ": fizz")
+    elif i % 5 == 0:
+        print("P", h+1 , ": buzz")
+    elif i % 3 == 0 and i % 5 == 0:
+        print("P", h+1 , ": fizzbuzz")
     else:
-        print("We have a short break today.")
-else:
-    print("Weekend!!")
+        print("P", h+1 , ":", i)
